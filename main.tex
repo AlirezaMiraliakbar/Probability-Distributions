@@ -4,6 +4,7 @@
 \usepackage{xcolor}
 \usepackage[framemethod=TikZ]{mdframed}
 \usepackage{graphicx}
+\usepackage{multicol}
 
 \mdfsetup{
   roundcorner=10pt,
@@ -19,6 +20,11 @@
 \begin{document}
 \maketitle
 
+\begin{multicols}{2}
+[
+\section*{Discrete Distributions}
+]
+
 % Bernoulli Distribution
 \begin{mdframed}
 \textbf{Bernoulli Distribution}
@@ -32,12 +38,15 @@
 \textit{Variance}: $\sigma^2 = p(1-p)$
 
 % Replace "example-image" with the actual file name of your figure
-% \includegraphics[width=0.5\textwidth]{example-image}
+% \includegraphics[width=\linewidth]{example-image}
 \textit{Figure Placeholder}
 
 \end{mdframed}
 
-\vspace{1cm}
+% Add more discrete distributions here following the same format
+
+\section*{Continuous Distributions}
+This section covers the key continuous probability distributions.
 
 % Normal Distribution
 \begin{mdframed}
@@ -52,11 +61,13 @@
 \textit{Variance}: $\sigma^2$
 
 % Replace "example-image" with the actual file name of your figure
-% \includegraphics[width=0.5\textwidth]{example-image}
+% \includegraphics[width=\linewidth]{example-image}
 \textit{Figure Placeholder}
 
 \end{mdframed}
 
-% Add additional distributions here following the same format
+% Add more continuous distributions here following the same format
+
+\end{multicols}
 
 \end{document}
