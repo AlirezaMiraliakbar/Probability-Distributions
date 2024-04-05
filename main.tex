@@ -1,0 +1,62 @@
+\documentclass{article}
+\usepackage[a4paper, margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{xcolor}
+\usepackage[framemethod=TikZ]{mdframed}
+\usepackage{graphicx}
+
+\mdfsetup{
+  roundcorner=10pt,
+  linewidth=1pt,
+  linecolor=blue,
+  backgroundcolor=gray!10,
+}
+
+\title{Probability Distributions Cheat Sheet}
+\author{Alireza Miraliakbar}
+\date{Spring 2024}
+
+\begin{document}
+\maketitle
+
+% Bernoulli Distribution
+\begin{mdframed}
+\textbf{Bernoulli Distribution}
+
+\textit{Description}: Models a single trial with two possible outcomes (success with probability $p$ and failure with probability $1-p$).
+
+\textit{PMF}: $P(X=k) = p^k(1-p)^{1-k}$ for $k \in \{0,1\}$
+
+\textit{Mean}: $\mu = p$
+
+\textit{Variance}: $\sigma^2 = p(1-p)$
+
+% Replace "example-image" with the actual file name of your figure
+% \includegraphics[width=0.5\textwidth]{example-image}
+\textit{Figure Placeholder}
+
+\end{mdframed}
+
+\vspace{1cm}
+
+% Normal Distribution
+\begin{mdframed}
+\textbf{Normal (Gaussian) Distribution}
+
+\textit{Description}: Described by its mean ($\mu$) and standard deviation ($\sigma$), and has the classic "bell curve" shape.
+
+\textit{PDF}: $f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}$
+
+\textit{Mean}: $\mu$
+
+\textit{Variance}: $\sigma^2$
+
+% Replace "example-image" with the actual file name of your figure
+% \includegraphics[width=0.5\textwidth]{example-image}
+\textit{Figure Placeholder}
+
+\end{mdframed}
+
+% Add additional distributions here following the same format
+
+\end{document}
