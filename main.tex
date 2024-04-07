@@ -37,7 +37,9 @@
 
 \textit{Variance}: $\sigma^2$
 
-\textit{Figure Placeholder}
+\begin{center}
+  \includegraphics*[width=0.7\textwidth]{normal.png}
+\end{center}
 
 \end{mdframed}
 
@@ -53,12 +55,130 @@
 
 \textit{Variance}: $\frac{1}{\lambda^2}$
 
-\textit{Figure Placeholder}
+\begin{center}
+  \includegraphics*[width=0.7\textwidth]{exponential.png}
+\end{center}
 
 \end{mdframed}
 
+\begin{mdframed}
+  \textbf{Uniform Distribution}
+  
+  \textit{Description}: Models equally likely outcomes between two boundaries, $a$ and $b$. It is characterized by constant probability density over its support.
+  
+  \textit{PDF}: $f(x) = \begin{cases} 
+    \frac{1}{b-a} & \text{for } a \leq x \leq b \\
+    0 & \text{otherwise}
+  \end{cases}$
+  
+  \textit{Mean}: $\mu = \frac{a + b}{2}$
+  
+  \textit{Variance}: $\sigma^2 = \frac{(b-a)^2}{12}$
+  
+  \begin{center}
+    \includegraphics*[width=0.7\textwidth]{uniform.png}
+  \end{center}
+  
+\end{mdframed}
+\begin{mdframed}
+    \textbf{Gamma Distribution}
+    
+    \textit{Description}: Models the time until an event occurs a specific number of times, given a continuous and constant arrival rate. It generalizes the exponential distribution.
+    
+    \textit{PDF}: $f(x; k, \theta) = \frac{x^{k-1}e^{-\frac{x}{\theta}}}{\theta^k \Gamma(k)}$ for $x > 0$
+    
+    \textit{Mean}: $\mu = k\theta$
+    
+    \textit{Variance}: $\sigma^2 = k\theta^2$
+    
+    \begin{center}
+      \includegraphics*[width=0.7\textwidth]{gamma.png}
+    \end{center}
+    
+\end{mdframed}
+\newpage
+\begin{mdframed}
+    \textbf{Beta Distribution}
+    
+    \textit{Description}: Models the distribution of probabilities, representing all the possible values of probability when outcomes are distributed according to a binomial distribution. It is especially useful in Bayesian inference and is defined on the interval [0, 1].
+    
+    \textit{PDF}: $f(x; \alpha, \beta) = \frac{x^{\alpha-1}(1-x)^{\beta-1}}{B(\alpha, \beta)}$ for $0 \leq x \leq 1$
+    
+    \textit{Mean}: $\mu = \frac{\alpha}{\alpha + \beta}$
+    
+    \textit{Variance}: $\sigma^2 = \frac{\alpha\beta}{(\alpha + \beta)^2(\alpha + \beta + 1)}$
+    
+    \begin{center}
+      \includegraphics*[width=0.7\textwidth]{beta.png}
+    \end{center}
+    
+\end{mdframed}
+\begin{mdframed}
+    \textbf{Log-Normal Distribution}
+    
+    \textit{Description}: Models variables that are the product of many independent, identically distributed random variables. It is suitable for representing variables that cannot be negative and have a long right tail, such as income, length of time, and biological measurements.
+    
+    \textit{PDF}: $f(x; \mu, \sigma) = \frac{1}{x\sigma\sqrt{2\pi}} e^{-\frac{(\ln x-\mu)^2}{2\sigma^2}}$ for $x > 0$
+    
+    \textit{Mean}: $\mu = e^{\mu + \frac{\sigma^2}{2}}$
+    
+    \textit{Variance}: $\sigma^2 = (e^{\sigma^2} - 1)e^{2\mu + \sigma^2}$
+    
+    \begin{center}
+      \includegraphics*[width=0.7\textwidth]{lognormal.png}
+    \end{center}
+    
+\end{mdframed}
+\begin{mdframed}
+      \textbf{Chi-Squared Distribution}
+      
+      \textit{Description}: A special case of the Gamma distribution, used primarily in hypothesis testing and in the construction of confidence intervals. It describes the distribution of the sum of the squares of $k$ independent standard normal random variables.
+      
+      \textit{PDF}: $f(x; k) = \frac{1}{2^{\frac{k}{2}}\Gamma(\frac{k}{2})}x^{\frac{k}{2}-1}e^{-\frac{x}{2}}$ for $x > 0$
+      
+      \textit{Mean}: $\mu = k$
+      
+      \textit{Variance}: $\sigma^2 = 2k$
+      
+      \begin{center}
+        \includegraphics*[width=0.7\textwidth]{chisquared.png}
+      \end{center}
+\end{mdframed}
+\begin{mdframed}
+\textbf{Weibull Distribution}
+        
+\textit{Description}: Commonly used in reliability engineering and failure analysis, the Weibull distribution is flexible, able to model various types of data. It is characterized by a scale parameter $\lambda$ and a shape parameter $k$, which dictate the distribution's spread and form, respectively.
+        
+\textit{PDF}: $f(x; k, \lambda) = \frac{k}{\lambda}\left(\frac{x}{\lambda}\right)^{k-1}e^{-(x/\lambda)^k}$ for $x > 0$
+        
+  \textit{Mean}: $\mu = \lambda \Gamma\left(1 + \frac{1}{k}\right)$
+        
+  \textit{Variance}: $\sigma^2 = \lambda^2 \left[\Gamma\left(1 + \frac{2}{k}\right) - \left(\Gamma\left(1 + \frac{1}{k}\right)\right)^2\right]$
+        
+  \begin{center}
+    \includegraphics*[width=0.7\textwidth]{weibull.png}
+  \end{center}
+\end{mdframed}
+\begin{mdframed}
+  \textbf{F-Distribution}
+  
+  \textit{Description}: Used primarily in the analysis of variance (ANOVA), comparing two variances, and in regression analysis. The F-distribution arises from the division of two chi-squared distributions divided by their respective degrees of freedom.
+  
+  \textit{PDF}: $f(x; d_1, d_2) = \frac{\sqrt{\frac{(d_1 x)^{d_1} \cdot d_2^{d_2}}{(d_1 x + d_2)^{d_1 + d_2}}}}{x \cdot B\left(\frac{d_1}{2}, \frac{d_2}{2}\right)}$ for $x > 0$
+  
+  \textit{Mean}: $\mu = \frac{d_2}{d_2 - 2}$ for $d_2 > 2$
+  
+  \textit{Variance}: $\sigma^2 = \frac{2d_2^2(d_1 + d_2 - 2)}{d_1(d_2 - 2)^2(d_2 - 4)}$ for $d_2 > 4$
+  
+  \begin{center}
+    \includegraphics*[width=0.7\textwidth]{fdistribution.png}
+  \end{center}
+          
+\end{mdframed}
+              
 \end{multicols}
 
+  
 \begin{multicols}{2}
 [
 \section*{Discrete Distributions}
