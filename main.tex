@@ -22,6 +22,45 @@
 
 \begin{multicols}{2}
 [
+\section*{Continuous Distributions}
+]
+
+% Normal Distribution
+\begin{mdframed}
+\textbf{Normal (Gaussian) Distribution}
+
+\textit{Description}: Described by its mean ($\mu$) and standard deviation ($\sigma$), and has the classic "bell curve" shape.
+
+\textit{PDF}: $f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}$
+
+\textit{Mean}: $\mu$
+
+\textit{Variance}: $\sigma^2$
+
+\textit{Figure Placeholder}
+
+\end{mdframed}
+
+% Exponential Distribution
+\begin{mdframed}
+\textbf{Exponential Distribution}
+
+\textit{Description}: Models the time between events in a Poisson point process, i.e., events occur continuously and independently at a constant average rate.
+
+\textit{PDF}: $f(x;\lambda) = \lambda e^{-\lambda x}$ for $x \geq 0$
+
+\textit{Mean}: $\frac{1}{\lambda}$
+
+\textit{Variance}: $\frac{1}{\lambda^2}$
+
+\textit{Figure Placeholder}
+
+\end{mdframed}
+
+\end{multicols}
+
+\begin{multicols}{2}
+[
 \section*{Discrete Distributions}
 ]
 
@@ -37,36 +76,25 @@
 
 \textit{Variance}: $\sigma^2 = p(1-p)$
 
-% Replace "example-image" with the actual file name of your figure
-% \includegraphics[width=\linewidth]{example-image}
 \textit{Figure Placeholder}
 
 \end{mdframed}
 
-% Add more discrete distributions here following the same format
-
-\section*{Continuous Distributions}
-This section covers the key continuous probability distributions.
-
-% Normal Distribution
+% Binomial Distribution
 \begin{mdframed}
-\textbf{Normal (Gaussian) Distribution}
+\textbf{Binomial Distribution}
 
-\textit{Description}: Described by its mean ($\mu$) and standard deviation ($\sigma$), and has the classic "bell curve" shape.
+\textit{Description}: Models the number of successes in a fixed number of independent Bernoulli trials, each with the same probability of success.
 
-\textit{PDF}: $f(x) = \frac{1}{\sigma\sqrt{2\pi}} e^{-\frac{1}{2}\left(\frac{x-\mu}{\sigma}\right)^2}$
+\textit{PMF}: $P(X=k) = \binom{n}{k}p^k(1-p)^{n-k}$ for $k = 0, 1, ..., n$
 
-\textit{Mean}: $\mu$
+\textit{Mean}: $\mu = np$
 
-\textit{Variance}: $\sigma^2$
+\textit{Variance}: $\sigma^2 = np(1-p)$
 
-% Replace "example-image" with the actual file name of your figure
-% \includegraphics[width=\linewidth]{example-image}
 \textit{Figure Placeholder}
 
 \end{mdframed}
-
-% Add more continuous distributions here following the same format
 
 \end{multicols}
 
