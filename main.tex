@@ -159,26 +159,27 @@
     \includegraphics*[width=0.7\textwidth]{weibull.png}
   \end{center}
 \end{mdframed}
+
+              
+\end{multicols}
 \begin{mdframed}
   \textbf{F-Distribution}
   
   \textit{Description}: Used primarily in the analysis of variance (ANOVA), comparing two variances, and in regression analysis. The F-distribution arises from the division of two chi-squared distributions divided by their respective degrees of freedom.
-  
-  \textit{PDF}: $f(x; d_1, d_2) = \frac{\sqrt{\frac{(d_1 x)^{d_1} \cdot d_2^{d_2}}{(d_1 x + d_2)^{d_1 + d_2}}}}{x \cdot B\left(\frac{d_1}{2}, \frac{d_2}{2}\right)}$ for $x > 0$
+  \begin{multicols}{2}
+    \textit{PDF}: $f(x; d_1, d_2) = \frac{\sqrt{\frac{(d_1 x)^{d_1} \cdot d_2^{d_2}}{(d_1 x + d_2)^{d_1 + d_2}}}}{x \cdot B\left(\frac{d_1}{2}, \frac{d_2}{2}\right)}$ for $x > 0$
   
   \textit{Mean}: $\mu = \frac{d_2}{d_2 - 2}$ for $d_2 > 2$
   
   \textit{Variance}: $\sigma^2 = \frac{2d_2^2(d_1 + d_2 - 2)}{d_1(d_2 - 2)^2(d_2 - 4)}$ for $d_2 > 4$
-  
   \begin{center}
-    \includegraphics*[width=0.7\textwidth]{fdistribution.png}
+    \includegraphics*[width=0.5\textwidth]{fdistribution.png}
   \end{center}
           
-\end{mdframed}
-              
-\end{multicols}
-
+  \end{multicols}
   
+  
+\end{mdframed}
 \begin{multicols}{2}
 [
 \section*{Discrete Distributions}
