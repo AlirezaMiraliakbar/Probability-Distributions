@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.27)  7 APR 2024 17:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.11.27)  7 APR 2024 18:05
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -645,28 +645,32 @@ Package pdftex.def Info: weibull.png  used on input line 159.
 File: fdistribution.png Graphic file (type png)
 <use fdistribution.png>
 Package pdftex.def Info: fdistribution.png  used on input line 176.
-(pdftex.def)             Requested size: 215.48395pt x 147.12158pt.
-
-Overfull \hbox (5.0pt too wide) in paragraph at lines 176--177
- [] 
- []
-
+(pdftex.def)             Requested size: 129.29167pt x 88.27502pt.
 [2 <./beta.png> <./lognormal.png> <./chisquared.png> <./weibull.png>]
-Package mdframed Info: Not enough space on this page on input line 202.
- [3 <./fdistribution.png>] (./main.aux) ) 
+<bernoulli.png, id=62, 501.19244pt x 342.19846pt>
+File: bernoulli.png Graphic file (type png)
+<use bernoulli.png>
+Package pdftex.def Info: bernoulli.png  used on input line 201.
+(pdftex.def)             Requested size: 139.63815pt x 95.33975pt.
+Package mdframed Info: Not enough space on this page on input line 204.
+ [3 <./fdistribution.png> <./bernoulli.png>] (./main.aux)
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 15210 strings out of 476025
- 309661 string characters out of 5790016
+ 15219 strings out of 476025
+ 309835 string characters out of 5790016
  1878388 words of memory out of 5000000
- 35380 multiletter control sequences out of 15000+600000
+ 35388 multiletter control sequences out of 15000+600000
  517709 words of font info for 51 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  122i,11n,126p,536b,1123s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy5.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on main.pdf (3 pages, 859704 bytes).
+Output written on main.pdf (3 pages, 901397 bytes).
 PDF statistics:
- 134 PDF objects out of 1000 (max. 8388607)
- 69 compressed objects within 1 object stream
+ 138 PDF objects out of 1000 (max. 8388607)
+ 70 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 112 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 123 words of extra memory for PDF output out of 10000 (max. 10000000)
 
