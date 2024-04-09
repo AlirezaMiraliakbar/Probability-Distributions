@@ -215,10 +215,44 @@
 
 \textit{Variance}: $\sigma^2 = np(1-p)$
 
-\textit{Figure Placeholder}
+\begin{center}
+  \includegraphics*[width=0.7\textwidth]{binomial.png}
+\end{center}
 
 \end{mdframed}
-
+\begin{mdframed}
+  \textbf{Poisson Distribution}
+  
+  \textit{Description}: Models the number of events occurring in a fixed interval of time or space if these events happen with a known constant mean rate and independently of the time since the last event.
+  
+  \textit{PMF}: $P(X=k) = \frac{\lambda^k e^{-\lambda}}{k!}$ for $k = 0, 1, 2, \ldots$
+  
+  \textit{Mean}: $\mu = \lambda$
+  
+  \textit{Variance}: $\sigma^2 = \lambda$
+  
+  \begin{center}
+    \includegraphics*[width=0.7\textwidth]{poisson.png}
+  \end{center}
+  
+\end{mdframed}
+\begin{mdframed}
+  \textbf{Geometric Distribution}
+  
+  \textit{Description}: Models the number of trials needed to get the first success in a series of independent Bernoulli trials, each with the same probability of success $p$. It is a discrete distribution and one of the simplest scenarios of failure/success experiments.
+  
+  \textit{PMF}: $P(X=k) = (1-p)^{k-1}p$ for $k = 1, 2, \ldots$
+  
+  \textit{Mean}: $\mu = \frac{1}{p}$
+  
+  \textit{Variance}: $\sigma^2 = \frac{1-p}{p^2}$
+  
+  \begin{center}
+    \includegraphics*[width=0.7\textwidth]{geometric.png}
+  \end{center}
+  
+\end{mdframed}
+  
 \end{multicols}
 
 \end{document}
